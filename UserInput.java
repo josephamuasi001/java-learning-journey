@@ -10,16 +10,16 @@ public class UserInput {
 
         //Exercise 
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your name here: ");
-        String name = scan.nextLine();
+        String name = scanner.nextLine();
         System.out.println("Hello, " + name);
 
         System.out.print("Enter your age here: ");
-        int age = scan.nextInt();
+        int age = scanner.nextInt();
         System.out.println("You are " + age + " years old.");
 
         
-        scan.close();
+        scanner.close();
     }
 }
