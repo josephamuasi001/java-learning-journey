@@ -7,11 +7,11 @@ public class Operations {
         int product = num1 * num2;
         double quotient = (double) num2 / num1;
         int modulos = num2 % num1;
-        System.out.println("Sum:" + sum);
-        System.out.println("Difference:" + difference);
-        System.out.println("Product:" + product);
-        System.out.println("Quotient:" + quotient);
-        System.out.println("Modulos:" + modulos);
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
+        System.out.println("Quotient: " + quotient);
+        System.out.println("Modulus: " + modulos);
 
 
         int age = 19;
