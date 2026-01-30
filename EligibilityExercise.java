@@ -7,6 +7,6 @@ public class EligibilityExercise {
         System.out.println("Are you a senior? " + (age >= 65));
 
         System.out.println("Are you eligible to vote? " + (age >= 18 && hasID));
-
+        System.out.println("Do you get a student discount? " + (age >=18 && age <= 25));
     }
 }
