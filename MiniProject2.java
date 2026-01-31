@@ -24,9 +24,8 @@ public class MiniProject2 {
                 } else {
                     System.out.println("Fail");
                 }
-                if (score < 0 || score > 100) {
-                    System.out.println("Invalid score");
-                } else if (score >= 50) {
+                
+                if (score >= 50) {
                     System.out.println("Pass");
                 } else {
                     System.out.println("Fail");
