@@ -10,12 +10,24 @@ public class AtmConsoleProgram {
             System.out.println("2. Deposit");
             System.out.println("3. Withdraw");
             System.out.println("4. Exit");
-
+            System.out.println("Choose an option: ");
             int choice = scanner.nextInt();
             scanner.nextLine();
 
             if (choice == 1) {
                 System.out.println("Your current balance is $" + balance);
+            } else if (choice == 2) {
+                System.out.println("How much do you want to deposit? ");
+                int deposit = scanner.nextInt();
+                scanner.nextLine();
+                if (deposit >= 0) {
+                    balance += deposit;
+                } else {
+                    System.out.println("Invalid deposit");
+                }
+            } else if (choice == 3) {
+                int withdraw = scanner.nextInt();
+                scanner.nextLine();
                 
             }
         }
