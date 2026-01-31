@@ -12,6 +12,17 @@ public class MiniProject {
             String name = scanner.nextLine();
             System.out.println("Enter your a score here: ");
             int score = scanner.nextInt();
+            scanner.nextLine();
+
+            if (score >= 90) {
+                System.out.println("Excellent");
+            } else if (score >= 70) {
+                System.out.println("Good");
+            } else if (score >= 50) {
+                System.out.println("Average");
+            } else {
+                System.out.println("Fail");
+            }
             
 
 
