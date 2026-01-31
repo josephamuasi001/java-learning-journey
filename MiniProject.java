@@ -24,9 +24,8 @@ public class MiniProject {
                 System.out.println("Fail");
             }
             
-
-
-
+            System.out.println("Do you want to continue? (yes/no) ");
+            continueProgram = scanner.nextLine();
         }
 
     }
