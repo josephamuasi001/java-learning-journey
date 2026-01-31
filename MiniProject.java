@@ -10,6 +10,8 @@ public class MiniProject {
         while (continueProgram.equalsIgnoreCase("yes")) {
             System.out.println("Enter your name here: ");
             String name = scanner.nextLine();
+            System.out.println("Enter your a score here: ");
+            int score = scanner.nextInt();
             
 
 
