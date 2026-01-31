@@ -7,7 +7,14 @@ public class MiniProject {
 
         String continueProgram = "yes";
 
-        while (continueProgram.equalsIgnoreCase("yes"));
-        
+        while (continueProgram.equalsIgnoreCase("yes")) {
+            System.out.println("Enter your name here: ");
+            String name = scanner.nextLine();
+            
+
+
+
+        }
+
     }
 }
