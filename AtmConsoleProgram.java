@@ -32,7 +32,7 @@ public class AtmConsoleProgram {
                 System.out.println("How much do you want to withdraw? ");
                 int withdraw = scanner.nextInt();
                 scanner.nextLine();
-                if (withdraw > 0) {
+                if (withdraw > 0 && withdraw <= balance) {
                     balance -= withdraw;
                     System.out.println(
                         "Congratulations, you have withdrawn $" 
