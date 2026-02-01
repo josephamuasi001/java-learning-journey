@@ -23,8 +23,7 @@ public class AtmConsoleProgram {
                 if (deposit >= 0) {
                     balance += deposit;
                     System.out.println("Congrats! You have recieved $"
-                    + deposit + " in your account" +
-                    
+                    + deposit + " in your account. Your balance is $" + balance
                     );
                 } else {
                     System.out.println("Invalid deposit");
@@ -44,8 +43,9 @@ public class AtmConsoleProgram {
                 } else if (withdraw > balance){
                     System.out.println("Invalid withdrawal, your don't have $" + withdraw + "in your balance $" + balance);   
                 } else {
-                    balance -= withdraw;
+                    System.out.println("Invalid transaction made");
                 }
+                
 
             } else if (choice == 4) {
                 System.out.println("Thank you for using the ATM");
