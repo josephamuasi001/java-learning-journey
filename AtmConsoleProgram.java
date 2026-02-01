@@ -4,8 +4,9 @@ public class AtmConsoleProgram {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double balance = 1000.0;
+        boolean running = true;
 
-        while (true) {
+        while (running) {
             System.out.println("1. Check balance");
             System.out.println("2. Deposit");
             System.out.println("3. Withdraw");
@@ -49,6 +50,7 @@ public class AtmConsoleProgram {
 
             } else if (choice == 4) {
                 System.out.println("Thank you for using the ATM");
+                running = false;
             } else {
                 System.out.println("Invalid option");
             }
