@@ -3,13 +3,12 @@ import java.util.Scanner;
 public interface LoginSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
+        String correctUsername = "admin";
+        String correctPassword = "1234";
         int counter = 3;
         boolean running = true;
 
-        while (counter != 0 && running) {
-            String correctUsername = "admin";
-            String correctPassword = "1234";
+        while (counter > 0) {
             System.out.println("Enter your username: ");
             String userName = scanner.nextLine();
             System.out.println("Enter your password: ");
