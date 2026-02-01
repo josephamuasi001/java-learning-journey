@@ -22,13 +22,35 @@ public class AtmConsoleProgram {
                 scanner.nextLine();
                 if (deposit >= 0) {
                     balance += deposit;
+                    System.out.println("Congrats! You have recieved $"
+                    + deposit + " in your account" +
+                    
+                    );
                 } else {
                     System.out.println("Invalid deposit");
                 }
             } else if (choice == 3) {
+                System.out.println("How much do you want to withdraw? ");
                 int withdraw = scanner.nextInt();
                 scanner.nextLine();
-                
+                if (withdraw > 0) {
+                    balance -= withdraw;
+                    System.out.println(
+                        "Congratulations, you have withdrawn $" 
+                        + withdraw 
+                        + "from you account. " 
+                        + "Your remaining balance is $" + balance 
+                    );
+                } else if (withdraw > balance){
+                    System.out.println("Invalid withdrawal, your don't have $" + withdraw + "in your balance $" + balance);   
+                } else {
+                    balance -= withdraw;
+                }
+
+            } else if (choice == 4) {
+                System.out.println("Thank you for using the ATM");
+            } else {
+                System.out.println("Invalid option");
             }
         }
     }
