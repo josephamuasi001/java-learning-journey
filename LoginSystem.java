@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
-public interface LoginSystem {
+public class LoginSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String correctUsername = "admin";
         String correctPassword = "1234";
         int counter = 3;
-        boolean running = true;
+        boolean loggedIn = true;
+    
 
         while (counter > 0) {
             System.out.println("Enter your username: ");
@@ -14,20 +15,19 @@ public interface LoginSystem {
             System.out.println("Enter your password: ");
             String password = scanner.nextLine();
             
-            if (userName == correctUsername && password == correctPassword) {
+            if (userName.equalsIgnoreCase(correctUsername) && password.equalsIgnoreCase(correctPassword)) {
                 System.out.println("Login successful !");
-                running = false;
-            } else if (userName != correctUsername || password != correctPassword) {
-                System.out.println("Invalid credentials");
+                loggedIn = true;
+                break;
+            } else  {
                 counter -= 1;
-                System.out.println("You have " + counter + "attempts remaining");
+                System.out.println("Invalid credentials");
+                System.out.println("You have " + counter + " attempts remaining");
 
-            }else {
-                System.out.println("Account locked, you have " + counter + " attempts!");
-                running = false;
             }
-            
-
-        }
+        }    
+        if (!loggedIn) {
+            System.out.println("Account locked, you have " + counter + " attempts!");
+        }       
     }
 }
