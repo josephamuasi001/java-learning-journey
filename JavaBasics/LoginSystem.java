@@ -31,5 +31,6 @@ public class LoginSystem {
         if (!loggedIn) {
             System.out.println("Account locked. No attempts remaining.");
         }
+        scanner.close();
     }
 }

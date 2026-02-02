@@ -16,7 +16,7 @@ public class MiniProject {
             scanner.nextLine();
 
             if (score >= 90) {
-                System.out.println("Excellent");
+                System.out.println(name + "Excellent");
             } else if (score >= 70) {
                 System.out.println("Good");
             } else if (score >= 50) {

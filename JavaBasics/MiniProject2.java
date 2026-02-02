@@ -17,7 +17,7 @@ public class MiniProject2 {
                 System.out.println("Invalid score");
             } else {
                 if (score >= 90 && score <= 100) {
-                    System.out.println("Excellent");
+                    System.out.println(name + " Excellent");
                 } else if (score >= 70) {
                     System.out.println("Good");
                 } else if (score >= 50) {
@@ -38,7 +38,7 @@ public class MiniProject2 {
             System.out.println("Do you want to enter another student? (yes/no) ");
             continueProgram = scanner.nextLine();
 
-
+            scanner.close();
         }
         
         

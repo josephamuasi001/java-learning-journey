@@ -55,6 +55,7 @@ public class AtmConsoleProgram {
             } else {
                 System.out.println("Invalid option");
             }
+            scanner.close();
         }
     }
 }

@@ -25,7 +25,7 @@ public class StudentsReusltManager {
                 studentName = scanner.nextLine();
 
             //Asking for student score
-                System.out.println("Enter your score here(0-100): ");
+                System.out.println(studentName + " Enter your score here(0-100): ");
                 studentScore = scanner.nextInt();
                 scanner.nextLine();
 
@@ -76,6 +76,7 @@ public class StudentsReusltManager {
                 System.out.println("Invalid option");
                 keepRunning = true;
             }
+        scanner.close();
         }
     }
 }
