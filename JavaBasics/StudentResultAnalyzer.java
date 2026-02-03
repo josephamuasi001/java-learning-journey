@@ -11,10 +11,7 @@ public class StudentResultAnalyzer {
         int noOfSubjects = scanner.nextInt();
 
         for (int i = 1; i <= noOfSubjects; i++) {
-            System.out.println("Enter subjects name here: ");
-            String submatch = scanner.nextLine();
-
-            System.out.println("Enter " + submatch + " score here");
+            System.out.println("Enter " + subName + " score here");
             int subScore = scanner.nextInt();
             
         }
