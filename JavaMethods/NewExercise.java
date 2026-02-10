@@ -7,11 +7,16 @@ public class NewExercise {
         int j = 8;
         boolean status = isAdult(j);
         System.out.println("You are an adult: " + status);
+
+        int t = 13;
+        String temperature = checkTemperature(t);
+        System.out.println("Your temperature is " + temperature);
     }
+    // Square number method
     public static int squareNumber(int num1) {
         return (num1 * num1 );
     }
-
+    //Method - isAdult
     public static boolean isAdult(int age) {
         if (age >= 18 ) {
             return true;
@@ -19,7 +24,7 @@ public class NewExercise {
             return false;
         }
     }
-    
+
 // Temperature method
     public static String checkTemperature(int temp) {
         if (temp >= 30) {
