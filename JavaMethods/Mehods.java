@@ -1,11 +1,10 @@
 public class Mehods {
-    public static int max(int num1, int num2) {
-        int result;
-        if(num1 > num2) {
-            result = num1;
-        } else {
-            result = num2;
-        }
-        return result;
+    public static void main(String[] args) {
+        sayHello("Joseph", 89);
+
+    }
+    public static void sayHello(String name, double age) {
+        System.out.println("Hello " + name );
+        System.out.println("You are " + age + " years ");
     }
 }
