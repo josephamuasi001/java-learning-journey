@@ -19,4 +19,16 @@ public class NewExercise {
             return false;
         }
     }
+    
+// Temperature method
+    public static String checkTemperature(int temp) {
+        if (temp >= 30) {
+            return "Hot";
+        }else if (temp >= 20) {
+            return "Warm";
+        } else {
+            return "Cold";
+        }
+
+    }
 }
