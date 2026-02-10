@@ -11,6 +11,11 @@ public class NewExercise {
         int t = 13;
         String temperature = checkTemperature(t);
         System.out.println("Your temperature is " + temperature);
+
+        String usName = "admin";
+        String usNum = "1234";
+        String logIn = checkLogin(usName, usNum);
+        System.out.println(logIn); 
     }
     // Square number method
     public static int squareNumber(int num1) {
@@ -35,5 +40,15 @@ public class NewExercise {
             return "Cold";
         }
 
+    }
+
+    // Login System Exercise
+    
+    public static String checkLogin(String userName, String userpassword) {
+        if (userName.equals("admin") && userpassword.equals("1234")) {
+            return "Login successful";
+        } else {
+            return "Invalid login credentials";
+        }
     }
 }
