@@ -53,6 +53,13 @@ public class Product {
         }
     }
 
+    public void displayProductInfo() {
+        System.out.println("Product ID: " + productID);
+        System.out.println("Name: " + name);
+        System.out.println("Price: $" + price);
+        System.out.println("Quantity in Stock: " + quantityInStock);
+    }
+
 }
 
 
