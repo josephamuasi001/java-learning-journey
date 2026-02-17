@@ -1,16 +1,10 @@
 public class Main {
+    
     public static void main(String[] args) {
-        Inventory inventory = new Inventory();
-        Item item1 = new Item("Mango", 80);
-        Item item2 = new Item("Banana", 100);
-        Item item3 = new Item("Bread", 12)
+        A a = new A();
+        a.greet("Hello from A");
 
-    
-        inventory.addItem(item1);
-        inventory.addItem(item2);
-        
-        inventory.displayInventory();
+        B b = new B();
+        b.greet("Hello from B");
     }
-
-    
 }
